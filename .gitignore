@@ -1,0 +1,29 @@
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Secrets & env (belt-and-suspenders; subfolders also ignore these)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+# tsc -b emits these from vite.config.ts
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Local data
+*.sqlite
+*.sqlite3
+backend/data/*.db
